@@ -5,16 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      body {
+        font-family: 'Lucida Sans Grande';
+        background-color: rgb(236, 236, 236);
+        width: 100%;
+
+      }
+      
+      .signform {
+        width: 300px;
+        height:fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .login {
+        width: 300px;
+        height: 45px;
+        box-sizing: border-box;
+        border: 1px solid darkgray;
+        border-radius: 3px;
+        padding: 5%;
+        font-size: medium;
+      }
+
+      #remember {
+        height: 20px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+
+      #sign {
+        background-color: rgb(33, 122, 255);
+        border: 0px;
+        border-radius: 4px;
+        color: white;
+        width: 300px;
+        height: 50px;
+        font-size: large;
+        cursor: pointer;
+      }
+
+      #empty {
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
-    <div class="top">
-
-    </div>
-    <div class="main">
-
-    </div>
-    <div class="bottom">
-
-    </divc>
+    <div id="empty"></div>
+    <form class="signform">
+      <image src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt width="72" height="72">
+      <h1>Please sign in</h1>
+      <input class="login" type="text" id="email" name="email" placeholder="Email address" required autofocus><br>
+      <input class="login" type="password" id="pwd" name="'pwd" placeholder="Password" required autofocus><br>
+      <div id="remember">
+        <input type="checkbox" name="rmb" id="rmb">
+        <label for="rmb">Remember me</label><br>
+      </div>
+      <input type="submit" id="sign" value="Sign in">
+      <br><p style="color: gray;">© 2017-2022</p>
+    </form> 
   </body>
 </html>
