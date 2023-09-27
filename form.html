@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        text-align: center;
+        background-color: #e7e2d2;
+      }
+
+      .center {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <form action="/action_page.php">
+        <fieldset style="width: 600px">
+          <legend>개인정보입력</legend>
+          <label for="name">이름: </label>
+          <input type="text" id="name" name="name" /><br />
+
+          <label for="gender">성별: </label>
+          <input type="radio" id="male" name="gender" value="m" />
+          <label for="gender">남</label>
+          <input type="radio" id="female" name="gender" value="f" />
+          <label for="gender">여</label><br />
+
+          <label
+            for="bi
+          rth"
+            >생년월일:
+          </label>
+          <input type="date" id="birth" name="birth" value="bth" /><br />
+
+          <label for="area">출신지: </label>
+          <select id="home" name="home">
+            <option value="su" selected>서울</option>
+            <option value="ic">인천</option>
+            <option value="gg">경기</option>
+            <option value="gw">강원</option>
+            <option value="cn">충남</option>
+            <option value="sj">세종</option>
+            <option value="cb">충북</option>
+            <option value="dj">대전</option>
+            <option value="jb">전북</option>
+            <option value="jn">전남</option>
+            <option value="gj">광주</option>
+            <option value="gb">경북</option>
+            <option value="gn">경남</option>
+            <option value="dg">대구</option>
+            <option value="us">울산</option>
+            <option value="bs">부산</option>
+            <option value="jj">제주</option>
+            <option value="dd">독도</option>
+          </select>
+          <br />
+
+          <label for="drive">운전면허:</label>
+          <select name="drive" id="drive">
+            <optgroup label="유">
+              <option value="d1">1종 보통</option>
+              <option value="d2">2종 보통</option>
+            </optgroup>
+            <optgroup label="무">
+              <option value="d0">무면허</option>
+            </optgroup>
+          </select>
+          <br />
+
+          <label for="snumber">학번: </label>
+          <input
+            type="text"
+            id="snumber"
+            name="snumber"
+            pattern="\d{8}"
+            placeholder="00000000"
+          /><br />
+
+          <label for="major">학과:</label>
+          <input list="major" name="major" />
+          <datalist id="major">
+            <option value="글로벌리더십학부"></option>
+            <option value="창의융합교육원"></option>
+            <option value="국제어문학부"></option>
+            <option value="커뮤니케이션학부"></option>
+            <option value="경영경제학부"></option>
+            <option value="법학부"></option>
+            <option value="상담심리사회복지학부"></option>
+            <option value="생명과학부"></option>
+            <option value="ICT창업학부"></option>
+            <option value="AI융합교육원"></option>
+            <option value="전산전자공학부"></option>
+            <option value="기계제어공학부"></option>
+            <option value="공간환경시스템공학부"></option>
+            <option value="콘텐츠융합디자인학부"></option>
+          </datalist>
+
+          <br />
+
+          <label for="hobby">취미: </label>
+          <input type="checkbox" id="hobby" name="hobby" value="movie" />
+          <label for="hobby">영화 감상</label>
+          <input type="checkbox" id="hobby" name="hobby" value="music" />
+          <label for="hobby">음악 감상</label>
+          <input type="checkbox" id="hobby" name="hobby" value="sport" />
+          <label for="hobby">운동</label>
+          <input type="checkbox" id="hobby" name="hobby" value="sns" />
+          <label for="hobby">SNS</label>
+          <input type="checkbox" id="hobby" name="hobby" value="book" />
+          <label for="hobby">독서</label>
+
+          <br />
+
+          <label for="favcolor">좋아하는 색상: </label>
+          <input type="color" id="favcolor" name="favcolor" value="#a7cd89" />
+          <br />
+
+          <label for="self">자기소개:</label><br />
+          <textarea
+            name="self"
+            rows="10"
+            cols="30"
+            minlength="10"
+            placeholder="10자 이상"
+          ></textarea>
+          <br /><br />
+
+          <input type="submit" value="제출" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
 </html>
